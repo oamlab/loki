@@ -17,16 +17,16 @@
 ---
 
 ## 🌏 前言
-- [在线文档：https://github.com/oamlab/loki](https://github.com/oamlab/loki)
+- [在线文档：https://gitee.com/oamlab/loki](https://gitee.com/oamlab/loki)
 - [Online Documentation：https://github.com/oamlab/loki](https://github.com/oamlab/loki/blob/main/README.English.md)
 
-*[国内访问请使用国内资料仓gitee入口，点击进入](https://gitee.com/oamlab/loki)
+*[国际访问请使用国际资料仓github入口，点击进入](https://github.com/oamlab/loki)
 
 ## 🔋 仓库联系人
-| 姓名						 | 联系方式        |
-|----------|-------------|
+| 姓名						 | 联系方式                |
+|----------|---------------------|
 | **xxx**  | xxx@xxx.com |
-| **xxx**  | xxx@xxx.com |
+| **XXX**  | xxx@xxx.com         |
 
 ## 🔒 背景
 - ...。
