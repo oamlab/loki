@@ -1,4 +1,3 @@
-<a name="mPhpk"></a>
 ## Loki 是什么
 [loki](https://github.com/grafana/loki) 官方介绍: Loki 是一个 **可水平扩展**, **高可用**, **多租户** 的日志聚合收集系统, 并且追求高性能和易于部署.<br />对比一下它和别的日志收集系统:
 
@@ -56,7 +55,7 @@ $ kubectl port-forward --namespace default service/loki-grafana 3000:80
 	<img alt="loki-3" src="./images/loki-3.png">
 </p>
 
-<a name="ijGQP"></a>
+
 ## 添加Loki看板
 导入模板ID：13639
 <p align="center">
@@ -66,13 +65,13 @@ $ kubectl port-forward --namespace default service/loki-grafana 3000:80
 
 **_注：现在k8s和loki已部署完成且能查看到k8s和业务pod日志_**
 
-<a name="EdBID"></a>
+
 ## Loki 利用k8s自动发现采集 Kubernetes Pod 内的其他日志
 要在 Loki 中实现自动发现和自动采集 Kubernetes Pod 内的其他日志，可以利用 Kubernetes 的标签和注解机制。Promtail 可以通过配置自动发现新 Pod 并采集其日志。以下是详细步骤，帮助你配置 Promtail 以实现这个功能。
-<a name="oh7BA"></a>
+
 ### 步骤 1: 配置 Promtail
 修改 Promtail 的配置文件，使其能够自动发现并采集 Pod 内部的其他日志。
-<a name="OoO6f"></a>
+
 #### 1.1. Promtail 配置示例
 以下是一个示例 Promtail 配置文件 **promtail.yaml**，该配置会自动发现带有特定注解的 Pod，并采集其日志：
 ```
@@ -174,7 +173,7 @@ scrape_configs:
 
 - **kubernetes-pods** 任务用于采集 Pod 标准输出的日志。
 - **kubernetes-pods-jenkins** 任务用于采集带有特定注解的 Pod 内部的其他日志文件。
-<a name="SSGij"></a>
+
 ### 步骤 2: 配置 Pod 注解
 在你的 Pod YAML 文件中添加注解，以指示 Promtail 采集特定日志文件。例如，假设你想采集 **/app/logs/custom.log** 文件：
 
@@ -198,7 +197,7 @@ spec:
       emptyDir: {}
 
 ```
-<a name="n0ZWk"></a>
+
 ### 步骤 3: 部署 Promtail 和 Pod
 
 1. **创建并生成Promtail ConfigMap**：
@@ -227,7 +226,7 @@ kubectl -n loki  edit daemonsets/loki-promtail
 保存后promtail pod 会自动重启
 
 
-<a name="gwHnP"></a>
+
 ### 验证和调试
 kubectl -n loki port-forward --address 0.0.0.0  loki-promtail-z89ft 3101:3101 <br />[http://127.0.0.1:3101/targets](http://10.38.99.41:9080/service-discovery)
 
