@@ -19,6 +19,8 @@
 ![avatar](./images/loki-2.png)
 
 <p align="center">
+	<img alt="Preacher_Medal_1_Star" src="./images/loki-0.png">
+	<img alt="Preacher_Medal_1_Star" src="./images/loki-1.png">
 	<img alt="Preacher_Medal_1_Star" src="./images/loki-2.png">
 </p>
 
