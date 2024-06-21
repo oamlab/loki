@@ -14,11 +14,9 @@
 - **Grafana** 日志查询界面
 
 架构图：
-<p align="center">
 ![avatar](./images/loki-0.png)
 ![avatar](./images/loki-1.png)
 ![avatar](./images/loki-2.png)
-</p >
 
 
 
