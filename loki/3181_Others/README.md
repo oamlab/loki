@@ -15,7 +15,7 @@
 
 架构图：
 
-![avatar](/images/loki-0.png)
+![avatar](./images/loki-0.png)
 
 <p align="center">
     < img alt="image1" src="./images/loki-0.png">
