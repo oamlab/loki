@@ -51,7 +51,11 @@ $ kubectl get secret --namespace default loki-grafana -o jsonpath="{.data.admin-
 $ kubectl port-forward --namespace default service/loki-grafana 3000:80
 
 ```
-接着打开 http://localhost:3000 进入 grafana 界面(用户名使用 admin), 点击 Explore 并且选择 label 就可以查看日志了.<br />![image.png](./images/loki-3.png)
+接着打开 http://localhost:3000 进入 grafana 界面(用户名使用 admin), 点击 Explore 并且选择 label 就可以查看日志了.<br />
+
+<p align="center">
+	<img alt="Preacher_Medal_1_Star" src="./images/loki-3.png">
+</p>
 
 <a name="ijGQP"></a>
 ## 添加Loki看板
