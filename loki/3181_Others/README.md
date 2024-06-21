@@ -15,9 +15,11 @@
 
 架构图：
 
-![](https://cdn.nlark.com/yuque/0/2024/png/29317380/1718786036931-f560cf9d-e179-46e4-aaed-5f130aea33d5.png#averageHue=%23faf2ec&clientId=u38711f4e-bca0-4&from=paste&id=uf0456bd5&originHeight=413&originWidth=1080&originalType=url&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=u15393e30-8323-41bd-b996-90fffd5e24c&title=)
+.\\images\\loki-0.png
+.\\images\\loki-1.png
+.\\images\\loki-2.png
 
-![](https://cdn.nlark.com/yuque/0/2024/png/29317380/1718786060056-d9f7bb30-c2b4-4e0c-927f-77cdc239a329.png#averageHue=%23faf8f6&clientId=u38711f4e-bca0-4&from=paste&id=u5713d2ff&originHeight=172&originWidth=891&originalType=url&ratio=1&rotation=0&showTitle=false&status=done&style=none&taskId=ud608dd67-c588-450b-9855-d49788a02e8&title=)<br />![image.png](https://cdn.nlark.com/yuque/0/2024/png/29317380/1718788146052-96c5ac63-a997-47fc-851b-5c5ba06ddb12.png#averageHue=%235b5b5b&clientId=u38711f4e-bca0-4&from=paste&id=u0de91d4f&originHeight=350&originWidth=500&originalType=url&ratio=1&rotation=0&showTitle=false&size=37400&status=done&style=none&taskId=u5f60a2a1-39a8-4800-8258-efcad2d6349&title=)
+
 <a name="uycHf"></a>
 ## Loki 部署
 根据k8s组件架构,  **promtail** 需要运行在所有运行应用容器的节点, 所以会是 **DaemonSet**, **loki** 作为核心服务, 带有持久化存储而且支持横向扩展, 所以应该是 **StatefulSet**, **Grafana** 是比较基本的独立应用, 可以复用已部署的.<br />最简单的方式还是使用 **helm**, loki 官方已经提供了生产可用的 chart.
