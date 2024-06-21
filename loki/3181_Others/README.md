@@ -15,7 +15,7 @@
 
 架构图：
 
-loki/3181_Others/images/loki-0.png
+.\\images\loki-0.png
 .\\images\\loki-0.png
 .\\images\\loki-1.png
 .\\images\\loki-2.png
