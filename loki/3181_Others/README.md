@@ -14,10 +14,6 @@
 - **Grafana** 日志查询界面
 
 架构图：
-![avatar](./images/loki-0.png)
-![avatar](./images/loki-1.png)
-![avatar](./images/loki-2.png)
-
 <p align="center">
 	<img alt="Preacher_Medal_1_Star" src="./images/loki-0.png">
 	<img alt="Preacher_Medal_1_Star" src="./images/loki-1.png">
