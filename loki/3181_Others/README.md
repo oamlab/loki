@@ -195,7 +195,6 @@ spec:
   volumes:
     - name: app-logs
       emptyDir: {}
-
 ```
 
 ### 步骤 3: 部署 Promtail 和 Pod
@@ -205,7 +204,6 @@ spec:
 kubectl create secret generic loki-promtail --from-file=promtail.yaml -n loki  --dry-run=client -o yaml >loki-promtail.yaml
 
 kubectl apply -f   loki-promtail.yaml
-
 ```
 
 2. **修改 Promtail Daemonset**：
