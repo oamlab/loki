@@ -72,7 +72,7 @@ $ kubectl port-forward --namespace default service/loki-grafana 3000:80
 ### 步骤 1: 配置 Promtail
 修改 Promtail 的配置文件，使其能够自动发现并采集 Pod 内部的其他日志。
 
-#### 1.1. Promtail 配置示例
+Promtail 配置示例
 以下是一个示例 Promtail 配置文件 **promtail.yaml**，该配置会自动发现带有特定注解的 Pod，并采集其日志：
 ```
 server:
