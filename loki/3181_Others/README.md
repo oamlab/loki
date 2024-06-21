@@ -18,7 +18,9 @@
 ![avatar](./images/loki-1.png)
 ![avatar](./images/loki-2.png)
 
-
+<p align="left">
+	<img alt="Preacher_Medal_1_Star" src="./images/loki-2.png">
+</p>
 
 <a name="uycHf"></a>
 ## Loki 部署
