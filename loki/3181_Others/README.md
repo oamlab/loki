@@ -61,7 +61,7 @@ $ kubectl port-forward --namespace default service/loki-grafana 3000:80
 ## 添加Loki看板
 导入模板ID：13639
 <p align="center">
-	<img alt="Preacher_Medal_1_Star" src="./images/loki-5.png">
+	<img alt="Preacher_Medal_1_Star" src="./images/loki-4.png">
 </p>
 
 
@@ -233,7 +233,7 @@ kubectl -n loki  edit daemonsets/loki-promtail
 kubectl -n loki port-forward --address 0.0.0.0  loki-promtail-z89ft 3101:3101 <br />[http://127.0.0.1:3101/targets](http://10.38.99.41:9080/service-discovery)
 
 <p align="center">
-	<img alt="Preacher_Medal_1_Star" src="./images/loki-6.png">
+	<img alt="Preacher_Medal_1_Star" src="./images/loki-5.png">
 </p>
 <a name="HA29C"></a>
 ### 最后
