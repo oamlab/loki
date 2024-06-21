@@ -225,7 +225,7 @@ kubectl -n loki  edit daemonsets/loki-promtail
 
 
 
-### 验证和调试
+### 步骤 4: 验证和调试
 kubectl -n loki port-forward --address 0.0.0.0  loki-promtail-z89ft 3101:3101 <br />[http://127.0.0.1:3101/targets](http://10.38.99.41:9080/service-discovery)
 
 <p align="center">
