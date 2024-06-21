@@ -59,7 +59,10 @@ $ kubectl port-forward --namespace default service/loki-grafana 3000:80
 
 <a name="ijGQP"></a>
 ## 添加Loki看板
-导入模板ID：13639<br />![image.png](https://cdn.nlark.com/yuque/0/2024/png/29317380/1718787710966-8988fa43-eff3-4731-88c4-9244d46f540c.png#averageHue=%23181b21&clientId=u38711f4e-bca0-4&from=paste&height=256&id=ubbf7b11f&originHeight=256&originWidth=1080&originalType=binary&ratio=1&rotation=0&showTitle=false&size=54348&status=done&style=none&taskId=u52fbb751-1e29-491c-b822-60814e39642&title=&width=1080)
+导入模板ID：13639
+<p align="center">
+	<img alt="Preacher_Medal_1_Star" src="./images/loki-4.png">
+</p>
 
 
 **_注：现在k8s和loki已部署完成且能查看到k8s和业务pod日志_**
@@ -229,7 +232,9 @@ kubectl -n loki  edit daemonsets/loki-promtail
 ### 验证和调试
 kubectl -n loki port-forward --address 0.0.0.0  loki-promtail-z89ft 3101:3101 <br />[http://127.0.0.1:3101/targets](http://10.38.99.41:9080/service-discovery)
 
-![image.png](https://cdn.nlark.com/yuque/0/2024/png/29317380/1718788978115-a5c5b41e-995f-4511-bfb9-c4b453181a8c.png#averageHue=%23fbfbfb&clientId=u38711f4e-bca0-4&from=paste&height=451&id=u7c901d05&originHeight=451&originWidth=1248&originalType=binary&ratio=1&rotation=0&showTitle=false&size=32904&status=done&style=none&taskId=u2e7433cf-804a-412a-a4cb-97b3c5b9cc0&title=&width=1248)
+<p align="center">
+	<img alt="Preacher_Medal_1_Star" src="./images/loki-6.png">
+</p>
 <a name="HA29C"></a>
 ### 最后
 通过上述配置，Promtail 可以自动发现并采集 Kubernetes Pod 内部的其他日志文件。只需在 Pod 注解中指定日志文件路径，Promtail 就会根据这些注解自动进行日志采集。这样可以简化日志管理流程，提高日志采集的灵活性和自动化程度。
