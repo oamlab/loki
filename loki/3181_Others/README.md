@@ -14,17 +14,12 @@
 - **Grafana** 日志查询界面
 
 架构图：
-
-![avatar](./images/loki-0.png)
-
 <p align="center">
-    < img alt="image1" src="./images/loki-0.png">
+![avatar](./images/loki-0.png)
+![avatar](./images/loki-1.png)
+![avatar](./images/loki-2.png)
 </p >
 
-.\\images\loki-0.png
-.\\images\\loki-0.png
-.\\images\\loki-1.png
-.\\images\\loki-2.png
 
 
 <a name="uycHf"></a>
