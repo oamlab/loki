@@ -15,12 +15,11 @@
 
 架构图：
 <p align="center">
-	<img alt="Preacher_Medal_1_Star" src="./images/loki-0.png">
-	<img alt="Preacher_Medal_1_Star" src="./images/loki-1.png">
-	<img alt="Preacher_Medal_1_Star" src="./images/loki-2.png">
+	<img alt="loki-0" src="./images/loki-0.png">
+	<img alt="loki-1" src="./images/loki-1.png">
+	<img alt="loki-2" src="./images/loki-2.png">
 </p>
 
-<a name="uycHf"></a>
 ## Loki 部署
 根据k8s组件架构,  **promtail** 需要运行在所有运行应用容器的节点, 所以会是 **DaemonSet**, **loki** 作为核心服务, 带有持久化存储而且支持横向扩展, 所以应该是 **StatefulSet**, **Grafana** 是比较基本的独立应用, 可以复用已部署的.<br />最简单的方式还是使用 **helm**, loki 官方已经提供了生产可用的 chart.
 ```
@@ -54,14 +53,14 @@ $ kubectl port-forward --namespace default service/loki-grafana 3000:80
 接着打开 http://localhost:3000 进入 grafana 界面(用户名使用 admin), 点击 Explore 并且选择 label 就可以查看日志了.
 
 <p align="center">
-	<img alt="Preacher_Medal_1_Star" src="./images/loki-3.png">
+	<img alt="loki-3" src="./images/loki-3.png">
 </p>
 
 <a name="ijGQP"></a>
 ## 添加Loki看板
 导入模板ID：13639
 <p align="center">
-	<img alt="Preacher_Medal_1_Star" src="./images/loki-4.png">
+	<img alt="loki-4" src="./images/loki-4.png">
 </p>
 
 
@@ -233,13 +232,13 @@ kubectl -n loki  edit daemonsets/loki-promtail
 kubectl -n loki port-forward --address 0.0.0.0  loki-promtail-z89ft 3101:3101 <br />[http://127.0.0.1:3101/targets](http://10.38.99.41:9080/service-discovery)
 
 <p align="center">
-	<img alt="Preacher_Medal_1_Star" src="./images/loki-5.png">
+	<img alt="loki-5" src="./images/loki-5.png">
 </p>
-<a name="HA29C"></a>
+
 ### 最后
 通过上述配置，Promtail 可以自动发现并采集 Kubernetes Pod 内部的其他日志文件。只需在 Pod 注解中指定日志文件路径，Promtail 就会根据这些注解自动进行日志采集。这样可以简化日志管理流程，提高日志采集的灵活性和自动化程度。
 
-<a name="PnCmf"></a>
+
 ## 补充：static config 静态配置 收集日志
 该代码适用于在虚拟机或裸机上直接追踪没有容器或容器环境的日志
 
