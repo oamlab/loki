@@ -232,11 +232,11 @@ kubectl -n loki port-forward --address 0.0.0.0  loki-promtail-z89ft 3101:3101 <b
 	<img alt="loki-5" src="./images/loki-5.png">
 </p>
 
-### 最后
+
 通过上述配置，Promtail 可以自动发现并采集 Kubernetes Pod 内部的其他日志文件。只需在 Pod 注解中指定日志文件路径，Promtail 就会根据这些注解自动进行日志采集。这样可以简化日志管理流程，提高日志采集的灵活性和自动化程度。
 
 
-## 补充：static config 静态配置 收集日志
+## Loki static config 静态配置 收集日志
 该代码适用于在虚拟机或裸机上直接追踪没有容器或容器环境的日志
 
 挂载了 volume 之后目的很明确, 其实就是要收集 **/var/log/jenkins** 下面的日志文件, 我们简单增加一条静态配置:
