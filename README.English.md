@@ -23,14 +23,14 @@
 ## 🔋 Repository Contact
 | Full Name						 | CONTACT             |
 |----------------|---------------------|
-| **xxx**  | xxx@xxx.com |
+| **Dennis Zhang**   | 343589969@qq.com |
 | **xxx**  | xxx@xxx.com |
 
 ## 🔒 Background
-- ...
+- More solutions for log collection systems.
 
 ## 🔑 Purpose
-- Loki is ...
+- Loki is a horizontally scalable, highly available, multi-tenant log aggregation and collection system that pursues high performance and easy deployment.
 
 ## 📚 Currently Sharing Content：
 
