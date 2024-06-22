@@ -240,6 +240,7 @@ kubectl -n loki edit daemonsets/loki-promtail
 ````
 kubectl -n loki port-forward --address 0.0.0.0 loki-promtail-z89ft 3101:3101
 ````
+
 [http://127.0.0.1:3101/targets](http://127.0.0.1:3101/targets)
 
 <p align="center">
