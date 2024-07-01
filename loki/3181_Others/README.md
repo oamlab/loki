@@ -21,19 +21,19 @@
 - **loki** 核心服务，存储日志和索引，并提供查询服务。
 - **Grafana** 日志查询界面。
 
-## 架构图
+# 架构图
 
-# Loki整体架构:
+## Loki整体架构
 <p align="center">
 	<img alt="loki-0" src="./images/loki-0.png">
 </p>
 
-# 采集虚拟机日志架构:
+## 采集虚拟机日志架构
 <p align="center">
 	<img alt="loki-1" src="./images/loki-1.png">
 </p>
 
-# 采集K8S日志架构:
+## 采集K8S日志架构
 <p align="center">
 	<img alt="loki-2" src="./images/loki-2.png">
 </p>
