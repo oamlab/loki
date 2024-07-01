@@ -193,7 +193,7 @@ scrape_configs:
 - **kubernetes-pods** 任务用于采集 Pod 标准输出的日志。
 - **kubernetes-pods-jenkins** 任务用于采集带有特定注解的 Pod 内部的其他日志文件。
 
-**修改完成后，重新生成Promtail ConfigMap**：
+**修改完成后，重新生成Promtail ConfigMa并部署**：
 ```
 kubectl create secret generic loki-promtail --from-file=promtail.yaml -n loki --dry-run=client -o yaml > loki-promtail.yaml
 kubectl apply -f loki-promtail.yaml
