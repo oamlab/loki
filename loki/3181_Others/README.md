@@ -213,17 +213,21 @@ metadata:
   name: my-app
   annotations:
     promtail.io/scrape: "true"
-    promtail.io/log_path: "/app/logs/custom.log" 
+    promtail.io/log_path: "/var/log/jenkins/audit.log" 
 spec:
   containers:
     - name: my-app-container
       image: my-app-image
       volumeMounts:
         - name: app-logs
-          mountPath: /app/logs
-  volumes:
-    - name: app-logs
-      emptyDir: {}
+          mountPath: /var/log/jenkins
+
+volumes:
+    - hostPath:
+      path: /var/log/jenkins
+      type: DirectoryOrCreate
+      name: app-logs
+
 ```
 
 保存后 pod 会自动重启
