@@ -202,7 +202,9 @@ kubectl apply -f loki-promtail.yaml
 ## 步骤 2: 配置 App Pod 注解，挂载日志路径
 
 在你的 Pod YAML 文件中添加注解，以指示 Promtail 采集特定日志文件。例如，假设你想采集 **/app/logs/custom.log** 文件：
+```
 kubectl edit deployments/app-xxx
+```
 
 ```
 apiVersion: v1
@@ -227,9 +229,9 @@ spec:
 保存后 pod 会自动重启
 
 ## 步骤 3: 配置 Loki Pod 注解，挂载日志路径
-
+```
 kubectl -n loki edit daemonsets/loki-promtail
-
+```
 
 ```
 - mountPath: /var/log/jenkins
