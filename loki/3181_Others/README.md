@@ -21,7 +21,8 @@
 - **loki** 核心服务，存储日志和索引，并提供查询服务。
 - **Grafana** 日志查询界面。
 
-架构图：
+##架构图：
+
 Loki整体架构
 <p align="center">
 	<img alt="loki-0" src="./images/loki-0.png">
