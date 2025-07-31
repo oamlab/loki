@@ -24,7 +24,7 @@
 | Full Name						 | CONTACT             |
 |----------------|---------------------|
 | **Dennis Zhang**   | 343589969@qq.com |
-| **xxx**  | xxx@xxx.com |
+| **xxx**  | example@example.localhost |
 
 ## 🔒 Background
 - More solutions for log collection systems.
